@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# 🎬 Marvel Movies App
+![Marvel Movies App](https://img.shields.io/badge/Marvel-Movies-E62429?style=for-the-badge)
+![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react)
+![Styled Components](https://img.shields.io/badge/Styled_Components-6.1.17-DB7093?style=flat-square&logo=styled-components)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.7.3-0055FF?style=flat-square&logo=framer)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive database app for Marvel movie fans, featuring an offline-first architecture and sleek UI.
 
-## Available Scripts
+<p align="center">
+  <img src="public/images/placeholder.jpg" alt="Marvel Movies App Screenshot" width="600">
+</p>
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Complete Marvel Universe**: Browse all Marvel movies across MCU, X-Men, Sony Spider-Man, and other franchises
+- **Rich Movie Details**: View posters, ratings, cast, and more through integration with OMDb API
+- **Smart Filtering**: Filter by franchise, sort by various criteria, and search for specific titles
+- **Offline Support**: Continue browsing even without an internet connection
+- **Responsive Design**: Works beautifully on mobile, tablet, and desktop devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Technical Highlights
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Modern React**: Built with React 19 using functional components and hooks
+- **Offline-First Architecture**: Service Worker + IndexedDB for reliable offline experience
+- **Progressive Web App**: Installable on mobile and desktop devices
+- **Optimized Performance**: 
+  - Lazy loading of images
+  - Batch processing of API requests
+  - Local caching of movie data and posters
+- **Beautiful Animations**: Smooth transitions and motion effects using Framer Motion
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, React Router
+- **Styling**: Styled Components
+- **Animations**: Framer Motion
+- **State Management**: React Hooks (useState, useEffect, useRef)
+- **API Integration**: OMDb API
+- **Offline Storage**: IndexedDB, Service Worker Caching
+- **Build Tools**: Create React App
 
-### `npm run build`
+## 📋 Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/marvel-movies-app.git
+   cd marvel-movies-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Environment Setup**
+   Create a `.env` file in the root directory with your OMDb API key:
+   ```
+   REACT_APP_OMDB_API_KEY=your_omdb_api_key
+   ```
 
-### `npm run eject`
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔍 Code Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **`/src`**: Main source code
+  - **`/components`**: Reusable UI components
+  - **`/pages`**: Page components (Home, MovieDetails)
+  - **`/hooks`**: Custom React hooks
+  - **`/services`**: API service integrations
+  - **`/utils`**: Helper utilities 
+  - **`/data`**: Static data (movie list)
+  - **`/styles`**: Global styles and theme
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧪 Testing & Linting
 
-## Learn More
+- **Run linter**
+  ```bash
+  npm run lint
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Fix linting issues**
+  ```bash
+  npm run lint:fix
+  ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌟 Future Enhancements
 
-### Code Splitting
+- Timeline view for chronological movie ordering
+- User accounts with favorite movies and watchlists
+- Integration with additional APIs for more comprehensive data
+- Dark/Light theme toggle
+- Advanced filtering options (directors, actors, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for educational purposes only and is not affiliated with Marvel Studios, Disney, or any other movie studios. All movie information is provided through the OMDb API.
