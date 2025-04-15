@@ -52,18 +52,24 @@ A comprehensive database app for Marvel movie fans, featuring an offline-first a
    npm install
    ```
 
-3. **Environment Setup**
+3. **Get an OMDb API Key**
+   - Visit the [OMDb API website](https://www.omdbapi.com/apikey.aspx)
+   - Fill out the form to request a FREE API key
+   - Check your email and click the verification link
+   - Your API key will be activated and displayed in the confirmation page
+
+4. **Environment Setup**
    Create a `.env` file in the root directory with your OMDb API key:
    ```
    REACT_APP_OMDB_API_KEY=your_omdb_api_key
    ```
 
-4. **Start the development server**
+5. **Start the development server**
    ```bash
    npm start
    ```
 
-5. **Build for production**
+6. **Build for production**
    ```bash
    npm run build
    ```
